@@ -1,0 +1,34 @@
+{
+  "name": "futureai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node dist/main.js",
+    "build": "tsc",
+    "dev": "nodemon --exec ts-node src/main.ts",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/core": "^9.0.0",
+    "@nestjs/typeorm": "^9.0.0",
+    "@nestjs/config": "^2.0.0",
+    "bull": "^4.0.0",
+    "typeorm": "^0.3.0",
+    "pg": "^8.0.0",
+    "@aws-sdk/client-s3": "^3.0.0",
+    "@aws-sdk/s3-request-presigner": "^3.0.0",
+    "@distube/ytdl-core": "^4.15.8",
+    "luxon": "^2.0.0",
+    "xml-js": "^1.6.11",
+    "typedi": "^0.10.0",
+    "rxjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.0.0",
+    "tsconfig-paths": "^4.0.0",
+    "@types/koa": "^2.13.4"
+  }
+}
